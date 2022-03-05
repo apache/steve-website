@@ -1,0 +1,19 @@
+pelican:
+  notify:         commits@steve.apache.org
+  autobuild:      preview/*
+  target:         asf-site
+  whoami:         main
+  
+staging:
+  whoami: asf-staging
+  profile: ~
+  autostage: preview/*
+
+github:
+  description:   Apache STeVe Website
+  homepage:      https://steve.apache.org
+  
+notifications:
+  commits:              commits@steve.apache.org
+  pullrequests:         dev@steve.apache.org
+  issues:               dev@steve.apache.org
